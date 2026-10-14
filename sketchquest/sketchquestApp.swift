@@ -1,17 +1,12 @@
-//
-//  sketchquestApp.swift
-//  sketchquest
-//
-//  Created by IM Student on 2026-10-13.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
-struct sketchquestApp: App {
+struct SketchQuestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
+        .modelContainer(for: DrawingRecord.self)
     }
 }
